@@ -19,13 +19,13 @@ body {
     align-self: center;
     justify-self: center;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #333;
     color: #ffffff;
     bottom: 0;
     left: 0;
-    width: 100%;
-    font-size: 30px;
+    width: 20%;
+    font-size: 38px;
 }
 
 .memory-next {
@@ -36,10 +36,10 @@ body {
     justify-self: center;
 
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 }
 
 .memory-game {
@@ -52,14 +52,15 @@ body {
     grid-column: 3;
     grid-row: 2;
     align-self: center;
-    justify-self: center
+    justify-self: center;
+    font-size: 22px;
 }
 
 .buttons{
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    justify-self: center
+    justify-self: center;
 }
 
 .row {
@@ -67,10 +68,10 @@ body {
 }
 
 .card {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    border: 1px solid #ccc;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    border: 1px solid #000000;
     transition: background-color 0.3s ease;
 }
 
@@ -80,54 +81,32 @@ body {
 
 /* Colores pastel */
 .color1 {
-    background-color: #ffd1dc;
+    background-color: #ff1650;
 }
 .color2 {
-    background-color: #ffecd1;
+    background-color: #f299ff;
 }
 .color3 {
-    background-color: #d1ffea;
+    background-color: #a182ff;
 }
 .color4 {
-    background-color: #e3d1ff;
+    background-color: #2672ff;
 }
 .color5 {
-    background-color: #ffbf80;
+    background-color: #6cc2ff;
 }
 .color6 {
-    background-color: #ffef96;
+    background-color: #35e500;
 }
 .color7 {
-    background-color: #aaff80;
+    background-color: #ffe547;
 }
 .color8 {
-    background-color: #96ffe0;
+    background-color: #ff9d37;
 }
 .color9 {
-    background-color: #ff9cf0;
+    background-color: #c7c7c7;
 }
-.color10 {
-    background-color: #d1c2ff;
-}
-.color11 {
-    background-color: #b2b2b2;
-}
-.color12 {
-    background-color: #99e6e6;
-}
-.color13 {
-    background-color: #d98cb3;
-}
-.color14 {
-    background-color: #d6ff80;
-}
-.color15 {
-    background-color: #ffe080;
-}
-.color16 {
-    background-color: #80ffbf;
-}
-
 
  .button-3 {
      cursor: pointer;
@@ -138,10 +117,10 @@ body {
      font-weight: 400;
      line-height: 1.5;
      text-align: center;
-     border: 1px solid transparent;
+     border: 1px solid #000000;
      padding: 6px 12px;
-     font-size: 16px;
-     border-radius: .25rem;
+     font-size: 25px;
+     border-radius: .5rem;
      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
      :hover {
          color: #fff;
