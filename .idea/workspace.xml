@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 4&#10;Canvis estètics al text de missatge.">
+    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 5&#10;Feedback al clickar colors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <workItem from="1707914500606" duration="1414000" />
       <workItem from="1708067101182" duration="3040000" />
       <workItem from="1708428220679" duration="2832000" />
-      <workItem from="1708517838013" duration="2331000" />
+      <workItem from="1708517838013" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1&#10;Canvis estètics.">
       <option name="closed" value="true" />
@@ -106,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708519320460</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit 5&#10;Feedback al clickar colors.">
+      <option name="closed" value="true" />
+      <created>1708520220367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708520220367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +124,7 @@
     <MESSAGE value="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals." />
     <MESSAGE value="Commit 3&#10;Mecanisme de perdre + comptador de rondes sempre visibles + ajusts al temps per els colors." />
     <MESSAGE value="Commit 4&#10;Canvis estètics al text de missatge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 4&#10;Canvis estètics al text de missatge." />
+    <MESSAGE value="Commit 5&#10;Feedback al clickar colors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5&#10;Feedback al clickar colors." />
   </component>
 </project>
