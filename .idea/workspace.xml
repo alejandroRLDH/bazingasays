@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 1&#10;Canvis estètics.">
+    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,8 @@
       <workItem from="1707312719382" duration="1424000" />
       <workItem from="1707914500606" duration="1414000" />
       <workItem from="1708067101182" duration="3040000" />
-      <workItem from="1708428220679" duration="2772000" />
+      <workItem from="1708428220679" duration="2832000" />
+      <workItem from="1708517838013" duration="1068000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1&#10;Canvis estètics.">
       <option name="closed" value="true" />
@@ -81,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708067354782</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals.">
+      <option name="closed" value="true" />
+      <created>1708431058238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708431058238</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1&#10;Canvis estètics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1&#10;Canvis estètics." />
+    <MESSAGE value="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals." />
   </component>
 </project>

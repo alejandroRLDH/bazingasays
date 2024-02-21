@@ -6,6 +6,7 @@ let input = 0;
 
 function start(){
     document.getElementById("startbutton").hidden = true;
+    document.getElementById("message").innerHTML = "";
     round = 0;
     colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
     colorsGenerats = [];
@@ -16,11 +17,12 @@ function start(){
 async function startRound(){
     input = 0;
     round++
+    document.getElementById("message").innerHTML = "Ronda " + round + "." + "<br>" + "No pots fer click."
     colorsGenerats.push(colorsDisponibles[Math.trunc(Math.random()*colorsDisponibles.length)]);
     for(let i = 0; i < colorsGenerats.length; i++){
-        await esperar(400);
+        await esperar(300);
         showNotification(colorsGenerats[i]);
-        await esperar( 1001);
+        await esperar( 501);
         document.getElementById("notification").style.backgroundColor = "#fff";
     }
     console.log(colorsGenerats);
@@ -28,6 +30,7 @@ async function startRound(){
         colorsJoc.push(colorsGenerats[i]);
     }
     input = 1;
+    document.getElementById("message").innerHTML = "Ronda " + round + "." + "<br>" + "Pots fer click."
 }
 
 function esperar(milliseconds){
@@ -43,7 +46,7 @@ function showNotification(message) {
     notification.style.backgroundColor=message
     notification.style.display = 'block';
     setTimeout(function() {
-    }, 1000);
+    }, 500);
 }
 
 function colorInput(color){
@@ -52,10 +55,16 @@ function colorInput(color){
         if (colorsDisponibles[color] == colorsJoc[0]){
             colorsJoc.shift();
         }else{
-            document.getElementById("message").innerHTML = "IDIOTA"
+            lose(color);
         }
         if (colorsJoc.length == 0) {
             startRound();
         }
     }
+}
+
+function lose(color){
+    input = 0;
+    document.getElementById("startbutton").hidden = false;
+    document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!";
 }
