@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals.">
+    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 3&#10;Mecanisme de perdre + comptador de rondes sempre visibles + ajusts al temps per els colors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1707914500606" duration="1414000" />
       <workItem from="1708067101182" duration="3040000" />
       <workItem from="1708428220679" duration="2832000" />
-      <workItem from="1708517838013" duration="1068000" />
+      <workItem from="1708517838013" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1&#10;Canvis estètics.">
       <option name="closed" value="true" />
@@ -89,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708431058238</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 3&#10;Mecanisme de perdre + comptador de rondes sempre visibles + ajusts al temps per els colors.">
+      <option name="closed" value="true" />
+      <created>1708519139412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708519139412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1&#10;Canvis estètics." />
     <MESSAGE value="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 2&#10;Jugable. Es fan rondes infinites i funcionals." />
+    <MESSAGE value="Commit 3&#10;Mecanisme de perdre + comptador de rondes sempre visibles + ajusts al temps per els colors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 3&#10;Mecanisme de perdre + comptador de rondes sempre visibles + ajusts al temps per els colors." />
   </component>
 </project>

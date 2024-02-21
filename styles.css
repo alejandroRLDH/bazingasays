@@ -51,9 +51,10 @@ body {
 .memory-message {
     grid-column: 3;
     grid-row: 2;
+    text-align: center;
     align-self: center;
     justify-self: center;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .buttons{

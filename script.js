@@ -66,5 +66,5 @@ function colorInput(color){
 function lose(color){
     input = 0;
     document.getElementById("startbutton").hidden = false;
-    document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!";
+    document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!" + "<br>" + "Inserint virus dins el teu sistema...";
 }
