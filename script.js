@@ -11,6 +11,9 @@ function start(){
     colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
     colorsGenerats = [];
     colorsJoc = [];
+    for(let i = 0 ; i < colorsDisponibles.length ; i++){
+        document.getElementById("bColor" + i).style.backgroundColor = colorsDisponibles[i];
+    }
     startRound()
 }
 
@@ -49,13 +52,16 @@ function showNotification(message) {
     }, 500);
 }
 
-function colorInput(color){
+async function colorInput(color){
     if(input==1){
-        console.log(color +": "+colorsJoc.at(0) + "-" + colorsDisponibles[color])
         if (colorsDisponibles[color] == colorsJoc[0]){
+            document.getElementById("bColor" + color).style.backgroundColor = "#fff";
+            await esperar(100);
+            document.getElementById("bColor" + color).style.backgroundColor = colorsJoc[0];
             colorsJoc.shift();
         }else{
             lose(color);
+            document.getElementById("bColor" + color).style.backgroundColor = "#fff";
         }
         if (colorsJoc.length == 0) {
             startRound();
