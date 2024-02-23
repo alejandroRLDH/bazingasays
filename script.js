@@ -1,6 +1,6 @@
 let round = 0;
 //colorsDisponibles -> tots els colors que hi ha al joc, mai canvia.
-const colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
+let colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
 //colorsGenerats -> lista de tots els colors generats dins el joc, mai mostrada.
 let colorsGenerats = [];
 //colorsJoc -> lista que s'usa al joc, copia de l'anterior i fa shift.
