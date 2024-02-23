@@ -71,7 +71,6 @@ async function colorInput(color){
             colorsJoc.shift();
         }else{
             lose(color);
-            document.getElementById("bColor" + color).style.backgroundColor = "#fff";
         }
         //Al fer shift suficients vegades fins que colorsJoc estigui buit, s'acaba la ronda.
         if (colorsJoc.length == 0) {
@@ -85,4 +84,8 @@ function lose(color){
     input = 0;
     document.getElementById("startbutton").hidden = false;
     document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!" + "<br>" + "Inserint virus dins el teu sistema...";
+    for(let i= 0 ; i < colorsDisponibles.length; i++){
+        document.getElementById("bColor" + i).style.backgroundColor = "#cb0000";
+    }
+    document.getElementById("bColor" + color).style.backgroundColor = "#fff";
 }
