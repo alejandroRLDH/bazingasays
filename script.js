@@ -6,12 +6,14 @@ let colorsGenerats = [];
 //colorsJoc -> lista que s'usa al joc, copia de l'anterior i fa shift.
 let colorsJoc = [];
 let input = 0;
+let range = 0;
 
 function start(){
     //No deixa fer click a començar una altra vegada i fa reset a tot.
     document.getElementById("startbutton").hidden = true;
     document.getElementById("message").innerHTML = "";
     round = 0;
+    console.log(range)
     colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
     colorsGenerats = [];
     colorsJoc = [];
@@ -26,14 +28,16 @@ async function startRound(){
     //No deixa fer click a cap botó i suma ronda.
     input = 0;
     round++
+    //Modifica la rapidesa dels colors cada ronda.
+    range = document.getElementById("range").value;
     document.getElementById("message").innerHTML = "Ronda " + round + "." + "<br>" + "No pots fer click."
     //Calcul de color, mostrador i push.
     colorsGenerats.push(colorsDisponibles[Math.trunc(Math.random()*colorsDisponibles.length)]);
     for(let i = 0; i < colorsGenerats.length; i++){
         //Espera un poc entre cada color per mostrar blanc.
-        await esperar(300);
+        await esperar(range*10-range*6);
         showNotification(colorsGenerats[i]);
-        await esperar( 501);
+        await esperar( range*10+1);
         document.getElementById("notification").style.backgroundColor = "#fff";
     }
     //Mecanisme per copiar tots els colors d'una variable a l'altra.
@@ -57,7 +61,7 @@ function showNotification(message) {
     notification.style.backgroundColor=message
     notification.style.display = 'block';
     setTimeout(function() {
-    }, 500);
+    }, range*10);
 }
 
 async function colorInput(color){

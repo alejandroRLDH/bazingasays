@@ -64,6 +64,11 @@ body {
     justify-self: center;
 }
 
+.range{
+    grid-column: 1;
+    grid-row: 3;
+}
+
 .row {
     display: flex;
 }

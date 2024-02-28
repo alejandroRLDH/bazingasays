@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 6&#10;Comentaris.">
+    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 8&#10;&quot;Pantalla de pérdua&quot;.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubPullRequestsUISettings">{}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/script.js" root0="SKIP_INSPECTION" />
@@ -56,7 +60,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-WS-241.12662.63" />
+        <option value="bundled-js-predefined-1d06a55b98c1-db596990d856-JavaScript-WS-241.13688.21" />
       </set>
     </attachedChunks>
   </component>
@@ -74,7 +78,10 @@
       <workItem from="1708428220679" duration="2832000" />
       <workItem from="1708517838013" duration="2935000" />
       <workItem from="1708671801430" duration="652000" />
-      <workItem from="1708673991136" duration="470000" />
+      <workItem from="1708673991136" duration="955000" />
+      <workItem from="1709033114388" duration="21000" />
+      <workItem from="1709034029210" duration="1763000" />
+      <workItem from="1709122818132" duration="1019000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1&#10;Canvis estètics.">
       <option name="closed" value="true" />
@@ -132,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708671831687</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit 8&#10;&quot;Pantalla de pérdua&quot;.">
+      <option name="closed" value="true" />
+      <created>1708674473906</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708674473906</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +171,7 @@
     <MESSAGE value="Commit 4&#10;Canvis estètics al text de missatge." />
     <MESSAGE value="Commit 5&#10;Feedback al clickar colors." />
     <MESSAGE value="Commit 6&#10;Comentaris." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 6&#10;Comentaris." />
+    <MESSAGE value="Commit 8&#10;&quot;Pantalla de pérdua&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 8&#10;&quot;Pantalla de pérdua&quot;." />
   </component>
 </project>
