@@ -7,13 +7,16 @@ let colorsGenerats = [];
 let colorsJoc = [];
 let input = 0;
 let range = 0;
+let checkcheck = 0;
+let check = true;
 
 function start(){
     //No deixa fer click a començar una altra vegada i fa reset a tot.
     document.getElementById("startbutton").hidden = true;
+    document.getElementById("check").hidden = true;
+    document.getElementById("checktext").hidden = true;
     document.getElementById("message").innerHTML = "";
     round = 0;
-    console.log(range)
     colorsDisponibles = ["#ff1650", "#f299ff", "#a182ff", "#2672ff", "#6cc2ff", "#35e500", "#ffe547", "#ff9d37", "#c7c7c7"];
     colorsGenerats = [];
     colorsJoc = [];
@@ -21,7 +24,7 @@ function start(){
     for(let i = 0 ; i < colorsDisponibles.length ; i++){
         document.getElementById("bColor" + i).style.backgroundColor = colorsDisponibles[i];
     }
-    startRound()
+    startRound();
 }
 
 async function startRound(){
@@ -30,13 +33,19 @@ async function startRound(){
     round++
     //Modifica la rapidesa dels colors cada ronda.
     range = document.getElementById("range").value;
-    document.getElementById("message").innerHTML = "Ronda " + round + "." + "<br>" + "No pots fer click."
+    document.getElementById("message").innerHTML = "Ronda " + round + "." + "<br>" + "No pots fer click.";
     //Calcul de color, mostrador i push.
     colorsGenerats.push(colorsDisponibles[Math.trunc(Math.random()*colorsDisponibles.length)]);
-    for(let i = 0; i < colorsGenerats.length; i++){
-        //Espera un poc entre cada color per mostrar blanc.
-        await esperar(range*10-range*6);
-        showNotification(colorsGenerats[i]);
+    if(check==true){
+        for(let i = 0; i < colorsGenerats.length; i++){
+            //Espera un poc entre cada color per mostrar blanc.
+            await esperar(range*10-range*6);
+            showNotification(colorsGenerats[i]);
+            await esperar( range*10+1);
+            document.getElementById("notification").style.backgroundColor = "#fff";
+        }
+    }else{
+        showNotification(colorsGenerats[colorsGenerats.length-1]);
         await esperar( range*10+1);
         document.getElementById("notification").style.backgroundColor = "#fff";
     }
@@ -66,19 +75,36 @@ function showNotification(message) {
 
 async function colorInput(color){
     //Comprova si pot clickar i si ha clickat el color correcte.
-    if(input==1){
-        if (colorsDisponibles[color] == colorsJoc[0]){
-            //Mecanisme per fer un petit flash per feedback.
-            document.getElementById("bColor" + color).style.backgroundColor = "#fff";
-            await esperar(100);
-            document.getElementById("bColor" + color).style.backgroundColor = colorsJoc[0];
-            colorsJoc.shift();
-        }else{
-            lose(color);
+    //If per el mode seqüència i sense seqüència.
+    if(check==true){
+        if(input==1){
+            if(colorsDisponibles[color] == colorsJoc[0]){
+                //Mecanisme per fer un petit flash per feedback.
+                document.getElementById("bColor" + color).style.backgroundColor = "#fff";
+                await esperar(100);
+                document.getElementById("bColor" + color).style.backgroundColor = colorsJoc[0];
+                colorsJoc.shift();
+            }else{
+                lose(color);
+            }
+            //Al fer shift suficients vegades fins que colorsJoc estigui buit, s'acaba la ronda.
+            if(colorsJoc.length == 0){
+                startRound();
+            }
         }
-        //Al fer shift suficients vegades fins que colorsJoc estigui buit, s'acaba la ronda.
-        if (colorsJoc.length == 0) {
-            startRound();
+    }else{
+        if(input==1){
+            if(colorsDisponibles[color] == colorsJoc[colorsJoc.length-1]){
+                document.getElementById("bColor" + color).style.backgroundColor = "#fff";
+                await esperar(100);
+                document.getElementById("bColor" + color).style.backgroundColor = colorsJoc[colorsJoc.length-1];
+                colorsJoc = [];
+            }else{
+                lose(color);
+            }
+            if(colorsJoc.length == 0){
+                startRound();
+            }
         }
     }
 }
@@ -87,9 +113,20 @@ function lose(color){
     //Al perdre et deixa jugar una altra vegada, pero no clickar. Et diu els punts.
     input = 0;
     document.getElementById("startbutton").hidden = false;
+    document.getElementById("check").hidden = false;
+    document.getElementById("checktext").hidden = false;
     document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!" + "<br>" + "Inserint virus dins el teu sistema...";
     for(let i= 0 ; i < colorsDisponibles.length; i++){
         document.getElementById("bColor" + i).style.backgroundColor = "#cb0000";
     }
     document.getElementById("bColor" + color).style.backgroundColor = "#fff";
+}
+
+function docheck(){
+    //Revisa si el quadrat de mostrar seqüència està marcat i a què canviar-ho.
+    if(check==true){
+        check = false;
+    }else{
+        check = true;
+    }
 }

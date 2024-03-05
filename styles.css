@@ -67,6 +67,19 @@ body {
 .range{
     grid-column: 1;
     grid-row: 3;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+}
+
+.check{
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
 }
 
 .row {

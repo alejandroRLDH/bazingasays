@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 8&#10;&quot;Pantalla de pérdua&quot;.">
+    <list default="true" id="97c143e3-6739-4a11-8955-f576928b962f" name="Changes" comment="Commit 9&#10;Input que et deixa canviar la velocitat dels colors mostrats.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
@@ -60,7 +60,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-db596990d856-JavaScript-WS-241.13688.21" />
+        <option value="bundled-js-predefined-1d06a55b98c1-db596990d856-JavaScript-WS-241.14024.30" />
       </set>
     </attachedChunks>
   </component>
@@ -81,7 +81,8 @@
       <workItem from="1708673991136" duration="955000" />
       <workItem from="1709033114388" duration="21000" />
       <workItem from="1709034029210" duration="1763000" />
-      <workItem from="1709122818132" duration="1019000" />
+      <workItem from="1709122818132" duration="2773000" />
+      <workItem from="1709637691738" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1&#10;Canvis estètics.">
       <option name="closed" value="true" />
@@ -147,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708674473906</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit 9&#10;Input que et deixa canviar la velocitat dels colors mostrats.">
+      <option name="closed" value="true" />
+      <created>1709123929487</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709123929487</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +181,7 @@
     <MESSAGE value="Commit 5&#10;Feedback al clickar colors." />
     <MESSAGE value="Commit 6&#10;Comentaris." />
     <MESSAGE value="Commit 8&#10;&quot;Pantalla de pérdua&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 8&#10;&quot;Pantalla de pérdua&quot;." />
+    <MESSAGE value="Commit 9&#10;Input que et deixa canviar la velocitat dels colors mostrats." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 9&#10;Input que et deixa canviar la velocitat dels colors mostrats." />
   </component>
 </project>
