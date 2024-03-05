@@ -115,10 +115,17 @@ function lose(color){
     document.getElementById("startbutton").hidden = false;
     document.getElementById("check").hidden = false;
     document.getElementById("checktext").hidden = false;
-    document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!" + "<br>" + "Inserint virus dins el teu sistema...";
+    document.getElementById("message").innerHTML = "Has perdut!" + "<br>" + "Has conseguit " + round + " punts. Torna a intentar-ho!" + "<br>" + "Inserint virus dins el teu sistema..." + "<br>" + "Has jugat en mode ";
+    //Comprova en quin mode has jugat per dir-t'ho.
+    if(check==true){
+        document.getElementById("message").innerHTML += "seqüència.";
+    }else{
+        document.getElementById("message").innerHTML += "sense seqüència.";
+    }
     for(let i= 0 ; i < colorsDisponibles.length; i++){
         document.getElementById("bColor" + i).style.backgroundColor = "#cb0000";
     }
+    //Fer el color equivocat blanc per que el jugador pugui veure que ha fet.
     document.getElementById("bColor" + color).style.backgroundColor = "#fff";
 }
 
